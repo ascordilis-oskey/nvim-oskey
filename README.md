@@ -1,5 +1,6 @@
 ### Configuration nvim
-# nvim-42
-# nvim-oskey
-# nvim-oskey
-# nvim-oskey
+
+- EsLint autoformat on save
+- Spaces and no tab
+
+
