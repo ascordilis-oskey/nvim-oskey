@@ -26,10 +26,14 @@ function M.on_attach(client, bufnr)
     bufmap("n", "<leader>fe", vim.diagnostic.setloclist, { desc = "Liste rapide local diagnostics" })
     bufmap("n", "<leader>fE", vim.diagnostic.setqflist, { desc = "Liste rapide global diagnostics" })
     -- Supprime le formating de ts_ls pour que seul es-lint formatte donc a enlever si jamais on veu pas de es-lint comme formater
-    if client.name == "ts_ls" then
+    if client.name == "ESLint" then
         client.server_capabilities.documentFormattingProvider = false
         client.server_capabilities.documentRangeFormattingProvider = false
     end
+    -- if client.name == "ts_ls" then
+    --     client.server_capabilities.documentFormattingProvider = false
+    --     client.server_capabilities.documentRangeFormattingProvider = false
+    -- end
     -- Activer le formatage par défaut pour ce buffer
     vim.b[bufnr].lsp_formatting_enabled = true
     -- Autocmd qui formate uniquement si la variable est à true
