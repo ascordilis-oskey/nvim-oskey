@@ -14,6 +14,13 @@ vim.opt.smarttab = true
 -- -- Ce réglage améliore la fluidité du scroll, notamment lors de l'exécution de macros ou de défilements rapides,
 -- -- en évitant de rafraîchir l'écran plus que nécessaire.
 -- vim.opt.lazyredraw = true
+-- Ignore la casse dans les recherches (ex: "app" match "App", "APP", etc.)
+vim.o.ignorecase = true
+
+-- Active un comportement intelligent :
+-- si tu tapes uniquement des minuscules → ignore la casse
+-- si tu tapes des MAJUSCULES → devient sensible à la casse
+vim.o.smartcase = true
 
 
 ----------------------HISTORY----------------------
