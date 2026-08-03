@@ -38,8 +38,8 @@ vim.pack.add({
     -- { src = "https://github.com/chomosuke/typst-preview.nvim" },
 
     -- Decommenter pour dactilo
-    { src = "https://github.com/nvzone/typr" },
-    { src = "https://github.com/nvzone/volt" },
+    -- { src = "https://github.com/nvzone/typr" },
+    -- { src = "https://github.com/nvzone/volt" },
 
     -- IA
     -- { src = "https://github.com/github/copilot.vim.git" },
@@ -88,7 +88,7 @@ require("plugins.plugin_configs.tmux")
 -- require("plugins.plugin_configs.mini_test")
 
 -- Decommenter pour dactilo (style monkeytype)
-require("plugins.plugin_configs.typr")
+-- require("plugins.plugin_configs.typr")
 
 -- Decommenter pour typst (language comme markdown et latex)
 -- require("plugins.plugin_configs.typst-preview")
