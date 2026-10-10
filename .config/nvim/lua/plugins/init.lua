@@ -24,6 +24,7 @@ vim.pack.add({
     { src = "https://github.com/nvim-mini/mini.cmdline" },
     { src = "https://github.com/nvim-mini/mini.starter" },
     { src = "https://github.com/nvim-mini/mini.extra" },
+    { src = "https://github.com/echasnovski/mini.surround" },
     { src = "https://github.com/dimtion/guttermarks.nvim" },
     { src = "https://github.com/MeanderingProgrammer/render-markdown.nvim" },
     { src = "https://github.com/f-person/git-blame.nvim" },
@@ -75,6 +76,7 @@ require("plugins.plugin_configs.guttermarks")
 require("plugins.plugin_configs.nvim-tree")
 require("plugins.plugin_configs.mini_pick")
 require("plugins.plugin_configs.mini_extra")
+require("plugins.plugin_configs.mini_surround")
 require("plugins.plugin_configs.render-markdown")
 require("plugins.plugin_configs.git-blame")
 require("plugins.plugin_configs.time-bomb")
